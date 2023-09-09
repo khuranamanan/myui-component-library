@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 function HomePage() {
@@ -9,7 +8,8 @@ function HomePage() {
           Your Unique React Component Library
         </h1>
         <p className="text-neutral-600">
-          Welcome to a world of web components designed to make your life easier.
+          Welcome to a world of web components designed to make your life
+          easier.
         </p>
         <div className="text-left">
           <h2 className="text-xl font-semibold text-cyan-700 mb-2">
