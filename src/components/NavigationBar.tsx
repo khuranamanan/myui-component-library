@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 function NavigationBar() {
@@ -9,7 +10,9 @@ function NavigationBar() {
 
   return (
     <div className="p-4 bg-cyan-800 text-cyan-50 flex flex-col items-center justify-center gap-2 sm:flex-row  sm:justify-between flex-wrap shadow-lg">
-      <div className="text-2xl font-bold">Component Library</div>
+      <Link to={"/"} className="text-2xl font-bold">
+        MyUI Component Library
+      </Link>
 
       <div className="flex gap-4">
         <NavLink to="/" className={handleClassNames}>
