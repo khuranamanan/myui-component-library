@@ -1,20 +1,16 @@
-import hljs from "highlight.js";
-import "highlight.js/styles/xcode.css";
-import { useEffect } from "react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { coldarkCold } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 interface CodeExampleProps {
   code: string;
 }
 
 function CodeExample({ code }: CodeExampleProps) {
-  useEffect(() => {
-    hljs.highlightAll();
-  }, []);
-
   return (
-    <pre className="whitespace-pre-wrap text-sm border border-neutral-300 rounded overflow-hidden">
-      <code className="language-javascript">{code}</code>
-    </pre>
+    <SyntaxHighlighter language="tsx" style={coldarkCold} wrapLongLines={true}>
+      {code}
+    </SyntaxHighlighter>
   );
 }
+
 export default CodeExample;
