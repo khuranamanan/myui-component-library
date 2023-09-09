@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,49 +21,4 @@ html {
 * {
   scrollbar-width: thin;
   scrollbar-color: #155e75 transparent;
-}
-
-/* Alert.css */
-
-.alert {
-  padding: 10px;
-  margin: 10px;
-  display: flex;
-  justify-content: space-between;
-  border-radius: 5px;
-}
-
-.success {
-  background-color: #4caf50;
-  color: white;
-}
-
-.error {
-  background-color: #f44336;
-  color: white;
-}
-
-.info {
-  background-color: #2196f3;
-  color: white;
-}
-
-.warning {
-  background-color: #ff9800;
-  color: white;
-}
-
-.outlined {
-  border: 1px solid;
-}
-
-.filled {
-  border: none;
-}
-
-.close-button {
-  background: none;
-  border: none;
-  color: inherit;
-  cursor: pointer;
 }
