@@ -15,7 +15,7 @@ function Sidebar() {
               <Link
                 to={`/components/${component.urlSlug}`}
                 className={twMerge(
-                  "block px-4 py-2 rounded hover:bg-cyan-100",
+                  "block px-4 py-2 rounded hover:bg-cyan-100 text-sm",
                   location.pathname === `/components/${component.urlSlug}` &&
                     "bg-cyan-800 text-cyan-50 hover:bg-cyan-900"
                 )}
