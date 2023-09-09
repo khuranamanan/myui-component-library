@@ -1,15 +1,20 @@
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { vs } from "react-syntax-highlighter/dist/esm/styles/prism";
+import hljs from "highlight.js";
+import "highlight.js/styles/xcode.css";
+import { useEffect } from "react";
 
 interface CodeExampleProps {
   code: string;
 }
 
 function CodeExample({ code }: CodeExampleProps) {
+  useEffect(() => {
+    hljs.highlightAll();
+  }, []);
+
   return (
-    <SyntaxHighlighter language="tsx" style={vs} wrapLongLines showLineNumbers>
-      {code}
-    </SyntaxHighlighter>
+    <pre className="whitespace-pre-wrap text-sm border border-neutral-300 rounded overflow-hidden">
+      <code className="language-javascript">{code}</code>
+    </pre>
   );
 }
 export default CodeExample;
