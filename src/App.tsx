@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage";
 import PageNotFound from "./pages/PageNotFound";
 import ComponentsPage from "./pages/ComponentsPage";
 import AvatarPage from "./pages/documents/AvatarPage";
-import AlertPage from "./pages/documents/AlertPage"
+import AlertPage from "./pages/documents/AlertPage";
 
 function App() {
   return (
