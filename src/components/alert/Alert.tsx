@@ -74,7 +74,7 @@ export function Alert(props: AlertProps) {
         options?.style
       )}`}
     >
-      <div className="p-4 sm:p-6">
+      <div className="px-4 py-2 sm:px-6 sm:py-4">
         <div className="flex items-center justify-between gap-4">
           <div>{getIcon(severity)}</div>
           <div className="flex-1">{children}</div>
