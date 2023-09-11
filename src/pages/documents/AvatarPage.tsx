@@ -35,6 +35,10 @@ function AvatarPage() {
           Here's the code for the Avatar component that you can copy and use in
           your project:
         </p>
+        <p className="text-gray-700 bg-blue-50 p-2 rounded">
+          Note- You'll need to install TailwindCSS, and tailwind-merge packages
+          first.
+        </p>
         <CodeExample
           code={`import { twMerge } from "tailwind-merge";
 
