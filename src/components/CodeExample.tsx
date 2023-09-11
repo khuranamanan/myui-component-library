@@ -7,9 +7,15 @@ interface CodeExampleProps {
 
 function CodeExample({ code }: CodeExampleProps) {
   return (
-    <SyntaxHighlighter language="tsx" style={coldarkCold} wrapLongLines={true}>
-      {code}
-    </SyntaxHighlighter>
+    <div className="text-sm">
+      <SyntaxHighlighter
+        language="tsx"
+        style={coldarkCold}
+        wrapLongLines={true}
+      >
+        {code}
+      </SyntaxHighlighter>
+    </div>
   );
 }
 
