@@ -7,6 +7,7 @@ import {
   AiFillWarning,
   AiOutlineClose,
 } from "react-icons/ai";
+import { twMerge } from "tailwind-merge";
 
 interface AlertProps {
   close: () => void;
@@ -20,36 +21,41 @@ export function Alert(props: AlertProps) {
 
   useTimeout(close, options?.duration || 4000);
 
-  function getBGColor(severity: AlertSeverity, style?: "filled" | "outline") {
-    const colorMap = {
-      DEFAULT: {
-        filled: "bg-neutral-200",
-        outline: "border border-neutral-300 bg-white bg-neutral-200",
-      },
-      SUCCESS: {
-        filled: "bg-green-500",
-        outline: "border border-green-500 bg-white bg-green-200",
-      },
-      ERROR: {
-        filled: "bg-red-500",
-        outline: "border border-red-500 bg-white bg-red-200",
-      },
-      INFO: {
-        filled: "bg-blue-500",
-        outline: "border border-blue-500 bg-white bg-blue-200",
-      },
-      WARN: {
-        filled: "bg-yellow-200",
-        outline: "border border-yellow-200 bg-white bg-yellow-200",
-      },
-    };
-
-    const color =
-      style === "outline"
-        ? colorMap[severity].outline
-        : colorMap[severity].filled;
-
-    return color || colorMap.DEFAULT.filled;
+  function getBGColor(
+    severity: AlertSeverity,
+    style: "filled" | "outline" = "filled"
+  ) {
+    if (style === "outline") {
+      switch (severity) {
+        case "DEFAULT":
+          return "border border-neutral-200 bg-neutral-100";
+        case "SUCCESS":
+          return "border-2 border-green-500 bg-green-200";
+        case "ERROR":
+          return "border border-red-500 bg-red-200";
+        case "INFO":
+          return "border border-blue-500 bg-blue-200";
+        case "WARN":
+          return "border border-yellow-300 bg-yellow-100";
+        default:
+          break;
+      }
+    } else {
+      switch (severity) {
+        case "DEFAULT":
+          return "bg-neutral-200";
+        case "SUCCESS":
+          return "bg-green-500";
+        case "ERROR":
+          return "bg-red-500";
+        case "INFO":
+          return "bg-blue-500";
+        case "WARN":
+          return "bg-yellow-200";
+        default:
+          break;
+      }
+    }
   }
 
   function getIcon(severity: AlertSeverity) {
@@ -69,10 +75,10 @@ export function Alert(props: AlertProps) {
 
   return (
     <div
-      className={`border-2 border-transparent rounded-md max-w-xs shadow-md mt-4 flex relative cursor-pointer ${getBGColor(
-        props.severity,
-        options?.style
-      )}`}
+      className={twMerge(
+        "border-2 border-transparent rounded-md max-w-xs shadow-md mt-4 flex relative cursor-pointer",
+        getBGColor(props.severity, options?.style)
+      )}
     >
       <div className="px-4 py-2 sm:px-6 sm:py-4">
         <div className="flex items-center justify-between gap-4">
