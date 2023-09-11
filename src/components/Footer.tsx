@@ -1,8 +1,5 @@
-import {
-  AiFillGithub,
-  AiFillTwitterSquare,
-  AiFillLinkedin,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -23,7 +20,7 @@ function Footer() {
             rel="noopener noreferrer"
             className="text-2xl font-bold hover:scale-125 transition"
           >
-            <AiFillTwitterSquare size={32} />
+            <FaXTwitter size={32} />
           </a>
           <a
             href="https://www.linkedin.com/in/manan-khurana-1b135b19b/"
