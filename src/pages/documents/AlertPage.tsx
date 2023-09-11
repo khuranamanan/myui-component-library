@@ -5,6 +5,7 @@ import {
   useAlert,
 } from "../../components/alert/AlertContext";
 import CodeExample from "../../components/CodeExample";
+import AlertComponentCode from "./components/AlertComponentCode";
 
 function AlertPage() {
   const alert = useAlert();
@@ -183,6 +184,9 @@ function AlertPage() {
           Show Custom Alert
         </button>
       </div>
+
+      {/* Source Code */}
+      <AlertComponentCode />
 
       {/* Usage Example */}
       <div className="flex flex-col gap-2 flex-wrap">
