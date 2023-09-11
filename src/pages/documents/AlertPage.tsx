@@ -172,7 +172,7 @@ function AlertPage() {
           code={`function showAlert() {
   alert.${alertType.toLowerCase()}("${alertContent}", { duration: ${
             alertOptions.duration
-          }, style: ${alertOptions.style} })
+          }, style: "${alertOptions.style}" })
 }`}
         />
 
