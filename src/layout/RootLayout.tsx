@@ -3,6 +3,7 @@ import NavigationBar from "../components/NavigationBar";
 import Sidebar from "../components/Sidebar";
 import { useLocation } from "react-router-dom";
 import useViewportWidth from "../hooks/useViewportWidth";
+import Footer from "../components/Footer";
 
 function RootLayout() {
   const location = useLocation();
@@ -27,6 +28,10 @@ function RootLayout() {
         <div className="flex-grow">
           <Outlet />
         </div>
+      </div>
+
+      <div>
+        <Footer />
       </div>
     </div>
   );
