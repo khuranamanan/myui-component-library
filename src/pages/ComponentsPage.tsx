@@ -5,12 +5,12 @@ function ComponentsPage() {
   return (
     <div className="flex flex-col gap-4 p-4">
       <h1 className="font-bold text-cyan-800 text-3xl">Components</h1>
-      <div className="flex gap-4 justify-center flex-wrap">
+      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
         {componentsData.map((component) => (
           <Link
             to={component.urlSlug}
             key={component.id}
-            className="hover:bg-cyan-500 bg-cyan-600 text-cyan-50 px-4 py-2 text-lg rounded font-semibold"
+            className="hover:bg-cyan-600 bg-cyan-700 text-cyan-50 px-4 py-2 text-lg rounded font-semibold"
           >
             {component.title}
           </Link>
