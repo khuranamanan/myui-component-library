@@ -26,18 +26,18 @@ function BadgePage() {
           Import the Badge component and use it as follows:
         </p>
         <div className="flex items-center space-x-4">
-          <Badge color="bg-cyan-500" position="top-right" badgeSX="p-2">
+          <Badge color="bg-cyan-500" position="top-right" badgeSX="sm:p-2">
             <AiFillShopping size={40} />
           </Badge>
-          <Badge color="bg-red-500" position="bottom-left" badgeSX="p-2">
+          <Badge color="bg-red-500" position="bottom-left" badgeSX="sm:p-2">
             <Avatar src={sampleImage} />
           </Badge>
         </div>
         <CodeExample
-          code={`<Badge color="bg-cyan-500" position="top-right" badgeSX="p-2">
+          code={`<Badge color="bg-cyan-500" position="top-right" badgeSX="sm:p-2">
   <AiFillShopping size={40} />
 </Badge>
-<Badge color="bg-red-500" position="bottom-left" badgeSX="p-2">
+<Badge color="bg-red-500" position="bottom-left" badgeSX="sm:p-2">
   <Avatar src={sampleImage} />
 </Badge>`}
         />
@@ -119,11 +119,11 @@ export default Badge;`}
         <p className="text-gray-700 mb-2">
           The content to which you want to add the badge.
         </p>
-        <Badge badgeSX="p-3">
+        <Badge badgeSX="p-2">
           <Avatar size="2xl" src={sampleImage} />
         </Badge>
         <CodeExample
-          code={`<Badge badgeSX="p-3">
+          code={`<Badge badgeSX="p-2">
   <Avatar size="2xl" src={sampleImage} />
 </Badge>`}
         />

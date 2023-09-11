@@ -22,15 +22,15 @@ const Badge: React.FC<BadgeProps> = ({
   const getBadgePosition = (position: PositionType) => {
     switch (position) {
       case "top-left":
-        return "top-0 left-0 transform -";
+        return "top-0 left-0 transform";
       case "top-right":
-        return "top-0 right-0 transform ";
+        return "top-0 right-0 transform";
       case "bottom-left":
         return "bottom-0 left-0 transform";
       case "bottom-right":
         return "bottom-0 right-0 transform";
       default:
-        return "top-0 right-0 transform ";
+        return "top-0 right-0 transform";
     }
   };
 
