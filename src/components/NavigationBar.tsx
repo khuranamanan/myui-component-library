@@ -9,18 +9,20 @@ function NavigationBar() {
   }
 
   return (
-    <div className="p-4 bg-cyan-800 text-cyan-50 flex flex-col items-center justify-center gap-2 sm:flex-row  sm:justify-between flex-wrap shadow-lg">
-      <Link to={"/"} className="text-2xl font-bold">
-        MyUI Component Library
-      </Link>
+    <div className="p-4 bg-cyan-800 text-cyan-50 shadow-lg">
+      <div className="container mx-auto flex flex-col items-center justify-center gap-2 sm:flex-row  sm:justify-between flex-wrap">
+        <Link to={"/"} className="text-2xl font-bold">
+          MyUI Component Library
+        </Link>
 
-      <div className="flex gap-4">
-        <NavLink to="/" className={handleClassNames}>
-          Home
-        </NavLink>
-        <NavLink to="/components" className={handleClassNames}>
-          Components
-        </NavLink>
+        <div className="flex gap-4">
+          <NavLink to="/" className={handleClassNames}>
+            Home
+          </NavLink>
+          <NavLink to="/components" className={handleClassNames}>
+            Components
+          </NavLink>
+        </div>
       </div>
     </div>
   );

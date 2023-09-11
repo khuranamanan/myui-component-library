@@ -17,7 +17,7 @@ function RootLayout() {
         <NavigationBar />
       </div>
 
-      <div className="flex-grow flex relative">
+      <div className="container mx-auto flex-grow flex relative">
         {shouldRenderSidebar && viewportWidth !== "sm" && (
           <div className="border-r border-neutral-200">
             <Sidebar />
