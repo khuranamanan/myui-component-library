@@ -5,6 +5,7 @@ import PageNotFound from "./pages/PageNotFound";
 import ComponentsPage from "./pages/ComponentsPage";
 import AvatarPage from "./pages/documents/AvatarPage";
 import AlertPage from "./pages/documents/AlertPage";
+import BadgePage from "./pages/documents/BadgePage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/components" element={<ComponentsPage />} />
           <Route path="/components/avatar" element={<AvatarPage />} />
           <Route path="/components/alert" element={<AlertPage />} />
+          <Route path="/components/badge" element={<BadgePage />} />
 
           <Route path="*" element={<PageNotFound />} />
         </Route>
