@@ -30,4 +30,9 @@ export const componentsData: { id: number; title: string; urlSlug: string }[] =
       title: "Text",
       urlSlug: "text",
     },
+    {
+      id: 7,
+      title: "Image",
+      urlSlug: "image",
+    },
   ];
