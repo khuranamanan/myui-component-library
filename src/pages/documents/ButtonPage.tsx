@@ -149,7 +149,7 @@ export default Button;`}
 
           <Button
             variant="primary"
-            className="bg-black rounded-full hover:bg-neutral-700"
+            className="bg-pink-500 rounded-full hover:bg-pink-600"
           >
             Custom Style Button
           </Button>
@@ -157,7 +157,7 @@ export default Button;`}
           <CodeExample
             code={`<Button
   variant="primary"
-  className="bg-black rounded-full hover:bg-neutral-700"
+  className="bg-pink-500 rounded-full hover:bg-pink-600"
 >
   Custom Style Button
 </Button>
@@ -176,7 +176,7 @@ export default Button;`}
           <Button
             variant="link"
             disabled
-            className="bg-black disabled:opacity-75 text-gray-300 hover:text-gray-100 cursor-not-allowed"
+            className="bg-teal-500 hover:bg-teal-600 disabled:opacity-75 text-white hover:text-gray-100 cursor-not-allowed"
           >
             Disabled Button
           </Button>
@@ -185,7 +185,7 @@ export default Button;`}
             code={`<Button
   variant="link"
   disabled
-  className="bg-black disabled:opacity-75 text-gray-300 hover:text-gray-100 cursor-not-allowed"
+  className="bg-teal-500 hover:bg-teal-600 disabled:opacity-75 text-white hover:text-gray-100 cursor-not-allowed"
 >
   Disabled Button
 </Button>
