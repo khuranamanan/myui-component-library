@@ -25,4 +25,9 @@ export const componentsData: { id: number; title: string; urlSlug: string }[] =
       title: "Heading",
       urlSlug: "heading",
     },
+    {
+      id: 6,
+      title: "Text",
+      urlSlug: "text",
+    },
   ];
