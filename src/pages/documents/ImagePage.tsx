@@ -1,4 +1,3 @@
-import React from "react";
 import CodeExample from "../../components/CodeExample";
 import Image from "../../components/Image";
 
