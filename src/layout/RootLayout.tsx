@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import NavigationBar from "../components/NavigationBar";
 import Sidebar from "../components/Sidebar";
@@ -11,6 +12,10 @@ function RootLayout() {
 
   const shouldRenderSidebar =
     location.pathname !== "/" && location.pathname !== "/components";
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <div className="min-h-screen bg-neutral-50 flex flex-col">
