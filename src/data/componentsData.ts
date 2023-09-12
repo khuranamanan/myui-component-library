@@ -15,4 +15,9 @@ export const componentsData: { id: number; title: string; urlSlug: string }[] =
       title: "Badge",
       urlSlug: "badge",
     },
+    {
+      id: 4,
+      title: "Button",
+      urlSlug: "button",
+    },
   ];
