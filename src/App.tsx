@@ -7,6 +7,7 @@ import AvatarPage from "./pages/documents/AvatarPage";
 import AlertPage from "./pages/documents/AlertPage";
 import BadgePage from "./pages/documents/BadgePage";
 import ButtonPage from "./pages/documents/ButtonPage";
+import HeadingPage from "./pages/documents/HeadingPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/components/alert" element={<AlertPage />} />
           <Route path="/components/badge" element={<BadgePage />} />
           <Route path="/components/button" element={<ButtonPage />} />
+          <Route path="/components/heading" element={<HeadingPage />} />
 
           <Route path="*" element={<PageNotFound />} />
         </Route>

@@ -20,4 +20,9 @@ export const componentsData: { id: number; title: string; urlSlug: string }[] =
       title: "Button",
       urlSlug: "button",
     },
+    {
+      id: 5,
+      title: "Heading",
+      urlSlug: "heading",
+    },
   ];
