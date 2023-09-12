@@ -139,6 +139,34 @@ export default Button;`}
           be used to customize its appearance and behavior.
         </p>
 
+        {/* Variant Prop */}
+        <div className="flex flex-col gap-2 flex-wrap items-start">
+          <h4 className="text-xl font-semibold">variant</h4>
+          <p className="text-gray-700 mb-2">
+            The <code>variant</code> prop allows you to specify the style
+            variant for the button. It supports the following options:
+          </p>
+          <ul className="list-disc pl-6">
+            <li className="text-gray-700 mb-1">
+              <code>"primary"</code>: The default style for primary buttons.
+            </li>
+            <li className="text-gray-700 mb-1">
+              <code>"secondary"</code>: The default style for secondary buttons.
+            </li>
+            <li className="text-gray-700 mb-1">
+              <code>"link"</code>: A text-based button with an underline
+              appearance.
+            </li>
+            <li className="text-gray-700 mb-1">
+              <code>"icon"</code>: A button that contains an icon or emoji.
+            </li>
+            <li className="text-gray-700">
+              <code>"fab"</code>: A floating action button often used for
+              prominent actions.
+            </li>
+          </ul>
+        </div>
+
         {/* className Prop */}
         <div className="flex flex-col gap-2 flex-wrap items-start">
           <h4 className="text-xl font-semibold">className</h4>
