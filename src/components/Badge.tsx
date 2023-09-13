@@ -39,7 +39,7 @@ const Badge: React.FC<BadgeProps> = ({
       {children}
       <span
         className={twMerge(
-          "p-1 rounded-full aspect-square absolute text-xs",
+          "p-1 rounded-full aspect-square absolute text-xs flex justify-center items-center overflow-hidden",
           color,
           getBadgePosition(position),
           badgeSX
