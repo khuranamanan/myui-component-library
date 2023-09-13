@@ -45,11 +45,11 @@ export function Alert(props: AlertProps) {
         case "DEFAULT":
           return "bg-neutral-200";
         case "SUCCESS":
-          return "bg-green-500";
+          return "bg-green-400";
         case "ERROR":
-          return "bg-red-500";
+          return "bg-red-400";
         case "INFO":
-          return "bg-blue-500";
+          return "bg-blue-400";
         case "WARN":
           return "bg-yellow-200";
         default:
