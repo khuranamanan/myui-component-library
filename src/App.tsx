@@ -10,6 +10,7 @@ import ButtonPage from "./pages/documents/ButtonPage";
 import HeadingPage from "./pages/documents/HeadingPage";
 import TextPage from "./pages/documents/TextPage";
 import ImagePage from "./pages/documents/ImagePage";
+import CardPage from "./pages/documents/CardPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/components/heading" element={<HeadingPage />} />
           <Route path="/components/text" element={<TextPage />} />
           <Route path="/components/image" element={<ImagePage />} />
+          <Route path="/components/card" element={<CardPage />} />
 
           <Route path="*" element={<PageNotFound />} />
         </Route>
